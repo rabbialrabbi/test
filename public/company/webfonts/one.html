@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/full-screen.js"></script>
+</head>
+<body>
+ <div class="container-fluid">
+     <div class="row dashboard-header text-center">
+          <div class="col-12 col-sm offset-md-2 col-md-2">
+              <div class="menu-icon">
+                  <i class="fas fa-align-justify"></i>
+              </div>
+              <div class="expand-icon">
+                 <a href="#" onclick="openFullscreen();" class="open-full-screen"><i class="fas fa-expand-arrows-alt" ></i></a>
+                 <a href="#" onclick="closeFullscreen();" class="close-full-screen"><i class="fas fa-expand-arrows-alt" ></i></a>
+                  
+              </div>
+          </div>
+          <div class="col-12 col-sm col-md-6">
+              <div class="dashboard-search">
+                  <form action="">
+                      <i class="fas fa-search"></i>
+                      <input type="search" placeholder="SEARCH">
+                  </form>
+              </div>
+          </div>
+          <div class="col-12 col-sm col-md-2">
+              <div class="dashboard-user">
+
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Profile</button>
+                        <button class="dropdown-item" type="button">Signout</button>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+ </div>
+  <div class="container-fluid">
+      <div class="row right-bg">
+         
+<!--     left side Menu and logo section start-->
+          <div class="col-sm-4 col-lg-2 col-md-3 dashboard-left-side-menu">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="dashboard-menu">
+                          <nav>
+                              <ul>
+                                 <li>
+                                    <a href="index.html" data-toggle="" class="icon-show-hide-one">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-home margin-right-css"></i></div>
+                                        Dashboard
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#sales" data-toggle="collapse" class="icon-show-hide-two">
+                                        <div class="icon-margin-rigth-css"><i class="fab fa-sellsy margin-right-css"></i></div>
+                                        <div>Sales</div>
+                                        <i class="fas fa-angle-right menu-icon-show-two"></i>
+                                         <ul id="sales" class="collapse">
+                                             <li><a href="new-sales.html">New Sales</a></li>
+                                             <li><a href="manage-sales.html">Manage Sales</a></li>
+                                             <li><a href="paid-sales.html">Paid Sales</a></li>
+                                             <li><a href="unpaid-sales.html">Unpaid Sales</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#product" data-toggle="collapse" class="icon-show-hide-three">
+                                        <div class="icon-margin-rigth-css"><i class="fab fa-product-hunt margin-right-css"></i></div>
+                                        <div>Product</div>
+                                        <i class="fas fa-angle-right menu-icon-show-three"></i>
+                                         <ul id="product" class="collapse">
+                                             <li><a href="add-product.html">Add Product</a></li>
+                                             <li><a href="product.html">Manage Product</a></li>
+                                             <li><a href="product-category.html">Product Categories</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 
+                                 <li>
+                                    <a href="#stock" data-toggle="collapse" class="icon-show-hide-four">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-socks margin-right-css"></i></div>
+                                        <div>Stock</div>
+                                        <i class="fas fa-angle-right menu-icon-show-four"></i>
+                                         <ul id="stock" class="collapse">
+                                             <li><a href="add-stock.html">Add Stock</a></li>                                              <li><a href="stock.html">Stock</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#expire" data-toggle="collapse" class="icon-show-hide-five">
+                                        <div class="icon-margin-rigth-css"><i class="fab fa-empire margin-right-css"></i></div>
+                                        <div>Expired</div>
+                                        <i class="fas fa-angle-right menu-icon-show-five"></i>
+                                         <ul id="expire" class="collapse">
+                                             <li><a href="expire.html">Expired</a></li>
+                                         </ul>
+                                        
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#expense" data-toggle="collapse" class="icon-show-hide-six">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-adjust margin-right-css"></i></div>
+                                        <div>Expense</div>
+                                        <i class="fas fa-angle-right menu-icon-show-six"></i>
+                                         <ul id="expense" class="collapse">
+                                             <li><a href="add-expense.html">Add Expense Type</a></li>
+                                             <li><a href="manage-expense-type.html">Manage Expense Type</a></li>
+                                             <li><a href="add-expense-invoice.html">Add Expense Invoice</a></li>
+                                             <li><a href="manage-expense-invoice.html">Manage Expense Invoice</a></li> 
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 
+                                 <li>
+                                    <a href="#order" data-toggle="collapse" class="icon-show-hide-seven">
+                                        <div class="icon-margin-rigth-css"><i class="fab fa-first-order-alt margin-right-css"></i></div>
+                                        <div>Order</div>
+                                        <i class="fas fa-angle-right menu-icon-show-seven"></i>
+                                         <ul id="order" class="collapse">
+                                             <li><a href="">New Sales</a></li>
+                                             <li><a href="">Manage Sales</a></li>
+                                             <li><a href="">Paid Sales</a></li>
+                                             <li><a href="">Unpaid Sales</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 
+                                 
+                                 
+                                 <li>
+                                    <a href="#branch" data-toggle="collapse" class="icon-show-hide-eight">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-code-branch margin-right-css"></i></div>
+                                        <div>Branch</div>
+                                        <i class="fas fa-angle-right menu-icon-show-eight"></i>
+                                         <ul id="branch" class="collapse">
+                                             <li><a href="">New Sales</a></li>
+                                             <li><a href="">Manage Sales</a></li>
+                                             <li><a href="">Paid Sales</a></li>
+                                             <li><a href="">Unpaid Sales</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#stuff" data-toggle="collapse" class="icon-show-hide-nine">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-users margin-right-css"></i></div>
+                                        <div>Stuff</div>
+                                        <i class="fas fa-angle-right menu-icon-show-nine"></i>
+                                         <ul id="stuff" class="collapse">
+                                             <li><a href="add-staff.html">Add Stuff</a></li>
+                                             <li><a href="manage-staff.html">Manage Stuff</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#customer" data-toggle="collapse" class="icon-show-hide-ten">
+                                        <div class="icon-margin-rigth-css"><i class="fab fa-intercom margin-right-css"></i></div>
+                                        <div>Customer</div>
+                                        <i class="fas fa-angle-right menu-icon-show-ten"></i>
+                                         <ul id="customer" class="collapse">
+                                             <li><a href="add-customer.html">Add Customer</a></li>
+                                             <li><a href="manage-customer.html">Manage Customers</a></li>
+                                             <li><a href="credit-customer.html">Credit Customers</a></li>
+                                             <li><a href="paid-customer.html">Paid Customer</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#loan" data-toggle="collapse" class="icon-show-hide-eleven">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-luggage-cart margin-right-css"></i></div>
+                                        <div>Loan</div>
+                                        <i class="fas fa-angle-right menu-icon-show-eleven"></i>
+                                         <ul id="loan" class="collapse">
+                                             <li><a href="manage-loaners.html">Manage Loaners</a></li>
+                                             <li><a href="add-loan.html">Add Loan</a></li>
+                                             <li><a href="manage-loan.html">Manage Loan</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#sms" data-toggle="collapse" class="icon-show-hide-twelve">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-sms margin-right-css"></i></div>
+                                        <div>SMS</div>
+                                        <i class="fas fa-angle-right menu-icon-show-twelve"></i>
+                                         <ul id="sms" class="collapse">
+                                             <li><a href="">New Sales</a></li>
+                                             <li><a href="">Manage Sales</a></li>
+                                             <li><a href="">Paid Sales</a></li>
+                                             <li><a href="">Unpaid Sales</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#report" data-toggle="collapse" class="icon-show-hide-thirten">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-bug margin-right-css"></i></div>
+                                        <div>Report</div>
+                                        <i class="fas fa-angle-right menu-icon-show-thirten"></i>
+                                         <ul id="report" class="collapse">
+                                             <li><a href="sales-profit-loss-ledger.html">Sales Profit/Loss Ledger</a></li>
+                                             <li><a href="sales-ledger.html">Sales Ledger</a></li>
+                                             <li><a href="expense-ledger.html">Expences Ledger</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 <li>
+                                    <a href="#setting" data-toggle="collapse" class="icon-show-hide-fourten">
+                                        <div class="icon-margin-rigth-css"><i class="fas fa-cog margin-right-css"></i></div>
+                                        <div>Setting</div>
+                                        <i class="fas fa-angle-right menu-icon-show-fourten"></i>
+                                         <ul id="setting" class="collapse">
+                                             <li><a href="company-info.html">Company Info</a></li>
+                                             <li><a href="">Signout</a></li>
+                                         </ul>
+                                    </a>
+                                     
+                                 </li>
+                                 
+                                  
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+          <div class="col-sm-2 col-md-2 col-lg-1 dashboard-left-side-menu-icon-one">
+              
+              
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="dashboard-menu text-center">
+                          <div class="btn-group dropright">
+                              <a href="index.html">
+                                  <button type="button" class="btn btn-secondary" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-home"></i>
+                                  </button>
+                              </a>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sales">
+                                <i class="fab fa-sellsy"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="new-sales.html" class="dropdown-item">New Sales</a>
+                                <a href="manage-sales.html" class="dropdown-item">Manage Sales</a>
+                                <a href="paid-sales.html" class="dropdown-item">Paid Sales</a>
+                                <a href="unpaid-sales.html" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Product">
+                                <i class="fab fa-product-hunt"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="add-product.html" class="dropdown-item">Add Product</a>
+                                <a href="product.html" class="dropdown-item">Manage Product</a>
+                                <a href="product-category.html" class="dropdown-item">Product Categories</a>
+                              </div>
+                            </div>
+                          <div class="btn-group dropright">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Stock">
+                                <i class="fas fa-socks"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="add-stock.html" class="dropdown-item">Add Stock</a>
+                                <a href="stock.html" class="dropdown-item">Stock</a>
+                              </div>
+                            </div>
+                            
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Expire">
+                                <i class="fab fa-empire"></i>
+                                <div class="dropdown-menu">
+                                    <a href="expire.html" class="dropdown-item">Expired</a>
+                                </div>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Expense">
+                                <i class="fas fa-adjust"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="add-expense.html" class="dropdown-item">Add Expense Type</a>
+                                <a href="manage-expense-type.html" class="dropdown-item">Manage Expenses Type</a>
+                                <a href="manage-expense-invoice.html" class="dropdown-item">Manage Expense Invoice</a>
+                              </div>
+                            </div>
+                             <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Order">
+                                <i class="fab fa-first-order-alt"></i>
+
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                            
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Branch">
+                                <i class="fas fa-code-branch"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Staff">
+                                <i class="fas fa-users"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                            
+                             <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Customer">
+                                <i class="fab fa-intercom"></i>
+
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Loan">
+                               <i class="fas fa-luggage-cart"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="SMS">
+                               <i class="fas fa-sms"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                          <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Report">
+                               <i class="fas fa-bug"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                             <div class="btn-group dropright">
+                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Setting">
+                               <i class="fas fa-cog"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a href="" class="dropdown-item">New Sales</a>
+                                <a href="" class="dropdown-item">Manage Sales</a>
+                                <a href="" class="dropdown-item">Paid Sales</a>
+                                <a href="" class="dropdown-item">Unpaid Sales</a>
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+<!--     left side Menu and logo section end-->
+         
+         
+<!--         right side start-->
+          <div id="add-cls-col-12" class="col-sm-8 col-lg-10 col-md-9"> 
+              <div class="row dashboard-right-content">
+                  <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="bread-cumb-area">
+                                  <h2>Add Customer</h2>
+                                  <a href="#">Dashboard</a>
+                                  <a href="#">Add Customer</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row new-sales-table-bg">
+                          <div class="col-md-12">
+                              <div class="row">
+                                     <div class="col-md-12">
+                                         <h2>Add Customer</h2>
+                                         <small>use this form to add customer to database.</small>
+                                         <div class="row">
+                                             <div class="col-md-3">
+                                                 <label for="">Name</label><br><br>
+                                                 <label for="">Logo</label><br><br><br>
+                                                 <label for="">Change Logo</label><br><br>
+                                                 <label for="">Currency</label><br><br>
+                                                 <label for="">Address</label><br><br>
+                                                 <label for="">City</label><br><br>
+                                                 <label for="">Country</label><br><br>
+                                                 <label for="">Phone</label><br><br>
+                                                 <label for="">Fax</label><br><br>
+                                                 <label for="">Website</label>
+                                             </div>
+                                             <div class="col-md-9">
+                                                 <input type="text" class="form-control">
+                                                 <img src="images/chart.jpg" alt="" class="logo-change"><br><br>
+                                                 <input type="file"><br><br>
+                                                 <select name="" id="" class="form-control mb-3">
+                                                     <option value="">$</option>
+                                                     <option value="">৳</option>
+                                                     <option value="">Rs</option>
+                                                 </select>
+                                                 <input type="text" class="form-control mb-3">
+                                                 <input type="text" class="form-control mb-3">
+                                                 <input type="text" class="form-control mb-3">
+                                                 <input type="text" class="form-control mb-3">
+                                                 <input type="text" class="form-control mb-3">
+                                                 <input type="text" class="form-control mb-3">
+                                                 <button class="btn btn-primary">Update Setting</button>
+                                             </div>
+                                         </div>
+                                     </div>    
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!--      footer area-->
+      <div class="row text-center">
+          <div class="col-md-12">
+              <div class="footer">
+                  Copyright &copy; 2019
+              </div>
+          </div>
+      </div>
+  </div>
+   
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+</html>

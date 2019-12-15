@@ -1,0 +1,169 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ .single-heading-menu-title {
+        font-size: 12px;
+    }
+      .bottom-visitor-area {
+	font-size: 19px;
+}
+    .dashboard-search input[type="search"] {
+	width: 76%;
+}
+        .dashboard-user {
+    float: right;
+}
+    .float-right {
+        float: left;
+    }
+    .shop-page-right-pagination {
+        margin-top: 20px;
+    }
+    .product-category-search {
+        float: left;
+    }
+    .product-btn-margin {
+        margin: 20px 0;
+    }
+    .menu-icon {
+        display: initial;
+    }
+       .dbm-h {
+        display: none;
+    }
+       .dashboard-left-side-menu-icon-one {
+        display: block;
+    }
+      .dashboard-left-side-menu {
+        display: none;
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ .single-heading-menu-title {
+        font-size: 10px;
+    }
+     .top-visitor-area {
+	font-size: 30px;
+}
+      .bottom-visitor-area {
+	font-size: 12px;
+}
+    .dashboard-search input[type="search"] {
+	width: 80%;
+}
+        .dashboard-user {
+    float: right;
+}
+    .float-right-css{
+        float: right;
+    }
+    .shop-page-right-pagination {
+        margin-top: 0;
+    }
+    .product-category-search {
+        float: left;
+    }
+    .product-btn-margin {
+        margin: 20px 0;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+    .dbm-h {
+        display: block;
+    }
+       .dashboard-left-side-menu-icon-one {
+        display: none;
+    }
+      .dashboard-left-side-menu {
+        display: block;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ .single-heading-menu-title {
+        font-size: 15px;
+    }
+     .top-visitor-area {
+	font-size: 50px;
+}
+    .bottom-visitor-area {
+	font-size: 14px;
+}
+.dashboard-search input[type="search"] {
+	width: 85%;
+}
+        .dashboard-user {
+    float: right;
+}
+    .float-right-css {
+        float: right;
+    }
+    .shop-page-right-pagination {
+        margin-top: 0;
+    }
+    .product-category-search {
+        float: left;
+    }
+    .product-btn-margin {
+        margin: 20px 0;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+    .dbm-h {
+        display: block;
+    }
+       .dashboard-left-side-menu-icon-one {
+        display: none;
+    }
+      .dashboard-left-side-menu {
+        display: block;
+    }
+    
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .single-heading-menu-title {
+        font-size: 15px;
+    }
+    .top-visitor-area {
+	font-size: 50px;
+}
+    .bottom-visitor-area {
+	font-size: 14px;
+}
+.dashboard-search input[type="search"] {
+	width: 85%;
+}
+    .dashboard-user {
+    float: right;
+}
+    .float-right-css {
+        float: right;
+    }
+    .shop-page-right-pagination {
+        margin-top: 0;
+    }
+    .product-category-search {
+        float: right;
+    }
+    .product-btn-margin {
+        margin: 0 0;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+    .dbm-h {
+        display: block;
+    }
+    .dashboard-left-side-menu-icon-one {
+        display: none;
+    }
+    .dashboard-left-side-menu {
+        display: block;
+    }
+}

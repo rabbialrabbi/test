@@ -1,0 +1,66 @@
+.tab-content .tab-pane {
+	margin-top: 20px;
+}
+.dropdown {
+    display: inline-block;
+}
+.shop-page-button {
+	background: #fff;
+	border: 1px solid #999;
+	color: #999;
+	font-size: 20px;
+	padding: 3px 12px;
+}
+.shop-page-table-content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.shop-page-table-content table {
+	background-color: #fff;
+}
+.shop-page-table-content .table-bordered {
+	border: 1px solid #b4b4b4;
+}
+.icon-margin-right {
+    margin-right: 10px;
+}
+.shop-pagination-total-page {
+    display: inline-block;
+}
+.shop-pagination-right {
+    display: inline-block;
+}
+.shop-page-right-pagination {
+    
+}
+.dashboard-page-title {
+	display: inline-block;
+	background-color: #38c4d5;
+	padding: 5px 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+	border-radius: 7px;
+	margin-bottom: 30px;
+}
+.margin-bottom-css {
+    margin-bottom: 20px;
+}
+.margin-right-css {
+    margin-right: 10px;
+}
+.float-right-css form input[type="search"] {
+	border: 1px solid #b1b5b8;
+	border-radius: 7px;
+	padding: 10px;
+	height: 30px;
+}
+
+.float-right-css .svg-inline--fa.fa-search.fa-w-16.shop-custom-search {
+	font-size: 31px;
+	margin-left: -32px;
+	position: relative;
+	top: 6px;
+	padding: 5px;
+	height: 32px;
+}

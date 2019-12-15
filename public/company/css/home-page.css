@@ -1,0 +1,215 @@
+html, body {
+
+  }
+.header-area {
+    border-top: 3px solid #e90e6994;
+    height: 100%;
+    overflow: hidden;
+}
+.home-page-menu {
+
+}
+.home-page-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.home-page-menu ul li {
+    float: left;
+}
+.home-page-menu ul li a {
+    color: #292929;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	line-height: 60px;
+	padding: 0px 20px;
+    text-decoration: none;
+	border-left: 2px solid #e90e6994;
+
+}
+.sign-up-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sign-up-menu ul li {
+    float: left;
+  }
+  .sign-up-menu ul li a {
+    color: #292929;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	line-height: 60px;
+	padding: 0px 20px;
+    text-decoration: none;
+	border-left: 2px solid #e90e6994;
+}
+.sign-up-section {
+	background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+.sign-up-section::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, .7);
+    content: "";
+}
+.left-signup-section-text {
+	margin-top: 100px;
+}
+.left-signup-section-text h2 {
+	font-size: 64px;
+	font-weight: 700;
+	color: rgb(236, 17, 127);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.left-signup-section-text p {
+    font-size: 21px;
+    font-weight: 400;
+    color: rgb(150, 28, 250);
+}
+.right-signup-section {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.right-signup-section button {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+.service_info h3 {
+	font-size: 21px;
+}
+.service_info p {
+	font-size: 16px;
+}
+.single-service-block {
+	border: 1px solid #ccc;
+	padding: 25px 0;
+	margin-bottom: 20px;
+}
+.shop-review-area {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+.left-how-work h2 {
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 42px;
+	margin-bottom: 20px;
+}
+.footer-area {
+    background-color: #222222;
+    padding: 30px 0;
+}
+.svg-inline--fa.home-page-social {
+	background: #fff;
+	font-size: 20px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	padding: 10px;
+    color: #000;
+    margin-right: 5px;
+    transition: .5s;
+}
+.svg-inline--fa.home-page-social:hover {
+    background-color: #ccc;
+    border: 1px solid #fff;
+    color: rgb(236, 17, 127);
+}
+.footer-left-social label {
+	color: #fff;
+	font-size: 21px;
+}
+.footer-right-subscribe label {
+	font-size: 21px;
+	color: #fff;
+}
+.footer-right-subscribe input[type="submit"] {
+	margin-left: -13px;
+	background: #fff;
+	border: 2px solid #fff;
+	border-radius: 0 15px 15px 0;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.footer-right-subscribe input[type="text"] {
+	padding: 6px;
+	border: 1px solid #424242;
+	background-color: #424242;
+	border-radius: 15px;
+	color: #fff;
+}
+.login-page-container {
+	width: 400px;
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one 🙂       */
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.login-verical-alig{
+	margin: 0 auto;
+}
+.login-area, .create-account-area {
+	border-radius: 5px;
+	border: 1px solid #d8dee2;
+	background-color: #fff;
+	padding: 20px;
+}
+.sign-up-background {
+	background-color: #F3F4F4;
+	padding: 50px 0;
+}
+.signup-form label {
+	display: block;
+}
+
+
+.sign-up-right-side-box {
+  border: 1px solid #ccc;
+}
+.box-top-title {
+	background-color: rgb(218, 16, 133);
+}
+.box-top-title h2 {
+  font-size: 30px;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+.box-middle-content {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+.box-middle-content p {
+  color: rgb(20, 214, 150);
+  line-height: 10px;
+}
+.box-bottom-content {
+  padding: 20px;
+}
+.box-bottom-content p {
+  line-height: 10px;
+  color: rgb(20, 214, 150);
+}
+
+
